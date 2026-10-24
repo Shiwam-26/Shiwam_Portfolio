@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shiwam Kumar — Data Analyst. I transform raw data into meaningful insights, build analytical tools, and help businesses make data-driven decisions." />
-  <title>Shiwam Kumar — Data Analyst</title>
+  <meta name="description" content="Shiwam Kumar — Entry-Level Data Analyst with practical foundations in Machine Learning and Generative AI. Final-year BCA student at Roorkee Institute of Technology experienced in Python, SQL, and Power BI." />
+  <meta name="keywords" content="Data Analyst, Entry-Level Data Analyst, Python, SQL, Power BI, Machine Learning, Generative AI, Portfolio, Shiwam Kumar, RIT Roorkee" />
+  <meta name="author" content="Shiwam Kumar" />
+  <meta property="og:title" content="Shiwam Kumar — Entry-Level Data Analyst | ML & GenAI" />
+  <meta property="og:description" content="Entry-level Data Analyst turning raw data into actionable business insights with Python, SQL, and Power BI. Verified analytics projects and internship experience." />
+  <meta property="og:type" content="website" />
+  <title>Shiwam Kumar — Entry-Level Data Analyst | ML &amp; GenAI</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -12,535 +18,766 @@
 </head>
 <body>
 
+  <!-- Skip link for keyboard accessibility -->
+  <a href="#about" class="skip-link">Skip to main content</a>
+
   <!-- ===== NAVIGATION ===== -->
-  <nav class="nav" id="navbar">
-    <div class="nav-logo">Shiwam Kumar</div>
+  <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Shiwam Kumar Portfolio Home">Shiwam Kumar</a>
     <div class="nav-links">
       <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#work" class="nav-link">Projects</a>
       <a href="#education" class="nav-link">Education</a>
       <a href="#contact" class="nav-link">Contact</a>
       <a href="mailto:shiwam808460@gmail.com" class="nav-cta" id="nav-cta-btn">Let's talk ↗</a>
     </div>
-    <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+    <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
     <a href="#about" class="mobile-link" id="mob-about">About</a>
+    <a href="#experience" class="mobile-link" id="mob-experience">Experience</a>
     <a href="#skills" class="mobile-link" id="mob-skills">Skills</a>
     <a href="#work" class="mobile-link" id="mob-projects">Projects</a>
     <a href="#education" class="mobile-link" id="mob-education">Education</a>
     <a href="#contact" class="mobile-link" id="mob-contact">Contact</a>
   </div>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero" id="hero">
-    <div class="hero-top-bar">
-      <span class="hero-tag">DATA ANALYST · PROBLEM SOLVER · STORYTELLER</span>
-      <span class="hero-location">BASED IN INDIA · THINKING GLOBAL</span>
-    </div>
+  <main id="main-content">
 
-    <div class="hero-content">
-      <div class="hero-side-label">
-        <span class="label-num">01</span>
-        <span class="label-divider">/</span>
-        <span class="label-text">PRESENCE</span>
+    <!-- ===== HERO SECTION ===== -->
+    <header class="hero" id="hero">
+      <div class="hero-top-bar">
+        <span class="hero-tag">ENTRY-LEVEL DATA ANALYST · ML &amp; GENAI ENTHUSIAST</span>
+        <span class="hero-location">ROORKEE, INDIA · OPEN TO FULL-TIME OPPORTUNITIES</span>
       </div>
 
+      <div class="hero-content">
+        <div class="hero-side-label">
+          <span class="label-num">01</span>
+          <span class="label-divider">/</span>
+          <span class="label-text">ANALYTICS &amp; AI</span>
+        </div>
 
-      <div class="hero-center">
-        <div class="hero-profile-wrap">
-          <div class="hero-profile-img" id="hero-profile">
-            <img src="assets/profile.jpg" alt="Shiwam Kumar" />
+        <div class="hero-center">
+          <div class="hero-profile-wrap">
+            <div class="hero-profile-img" id="hero-profile">
+              <img src="assets/profile.jpg" alt="Shiwam Kumar — Entry-Level Data Analyst" width="150" height="150" />
+            </div>
+          </div>
+          <p class="hero-sub">ENTRY-LEVEL DATA ANALYST</p>
+          <h1 class="hero-title">
+            Shiwam <em>Kumar</em>
+          </h1>
+          <p class="hero-desc">
+            Entry-level Data Analyst turning raw data into actionable business insights with Python, SQL, and Power BI — with practical foundations in Machine Learning and Generative AI.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary" id="view-projects-btn">View Projects ↓</a>
+            <a href="assets/resume.pdf" class="btn-outline" id="download-resume-btn" download="Shiwam_Kumar_Data_Analyst_Resume.pdf" target="_blank" rel="noopener">Download Resume ↗</a>
+            <a href="#contact" class="btn-outline" id="contact-me-btn">Contact Me ↗</a>
+          </div>
+          <div class="hero-social-links">
+            <a href="https://github.com/Shiwam-26" class="btn-icon" id="hero-github-btn" target="_blank" rel="noopener" aria-label="GitHub Profile (opens in new tab)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shiwamkumar26" class="btn-icon" id="hero-linkedin-btn" target="_blank" rel="noopener" aria-label="LinkedIn Profile (opens in new tab)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
-        <p class="hero-sub">A HUMAN PERSPECTIVE ON DATA</p>
-        <h1 class="hero-title">
-          Shiwam <em>Kumar</em>
-        </h1>
-        <p class="hero-desc">
-          I analyze data, build dashboards,<br/>
-          and help businesses grow smarter.
-        </p>
-        <div class="hero-actions">
-          <a href="#work" class="btn-primary" id="explore-work-btn">Explore my work ↓</a>
-          <a href="#contact" class="btn-outline" id="start-convo-btn">Start a conversation ↗</a>
+
+        <div class="hero-right-labels">
+          <span>DATA ANALYTICS</span>
+          <span>MACHINE LEARNING</span>
+          <span>GENERATIVE AI</span>
         </div>
       </div>
 
-      <div class="hero-right-labels">
-        <span>ENGINEERING</span>
-        <span>ANALYSIS</span>
-        <span>DATA VISION</span>
+      <div class="hero-bottom-bar">
+        <span class="scroll-indicator">SCROLL TO EXPLORE ↓</span>
+        <span class="hero-since">BCA FINAL YEAR · ROORKEE INSTITUTE OF TECHNOLOGY</span>
+        <div class="noise-btn" id="noise-btn" role="button" tabindex="0" aria-label="Toggle motion effects">
+          <span>MOTION ON</span>
+          <div class="noise-dot"></div>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <div class="hero-bottom-bar">
-      <span class="scroll-indicator">SCROLL TO DISCOVER ↓</span>
-      <span class="hero-since">ANALYZING &amp; BUILDING SINCE 2026</span>
-      <div class="noise-btn" id="noise-btn">
-        <span>MOTION ON</span>
-        <div class="noise-dot"></div>
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats-section" id="stats" aria-label="Key metrics and verified achievements">
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Records Cleaned &amp; Analyzed with Python &amp; SQL</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">80%</div>
+          <div class="stat-label">Churn Prediction Accuracy on 7,043 Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Production SQL Queries (Joins, Aggregations, CTEs)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Interactive Power BI &amp; Excel Dashboards Built</div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- ===== ABOUT SECTION ===== -->
-  <section class="about-section" id="about">
-    <div class="section-header reveal">
-      <div class="section-num">
-        <span>01</span> / <span>THE PERSON BEHIND THE WORK</span>
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section" id="about">
+      <div class="section-header reveal">
+        <div class="section-num">
+          <span>01</span> / <span>BACKGROUND &amp; PHILOSOPHY</span>
+        </div>
+        <span class="section-tagline">ANALYTICAL RIGOR · BUSINESS VALUE</span>
       </div>
-      <span class="section-tagline">A CONNECTED PERSPECTIVE</span>
-    </div>
 
-    <div class="about-inner">
-      <div class="about-visual reveal">
-        <div class="about-portrait-wrap">
-          <div class="about-portrait-frame">
-            <img src="assets/about-portrait.jpg" alt="Shiwam Kumar — Data Analyst" class="about-portrait-img" />
-            <div class="about-portrait-overlay"></div>
-            <div class="about-portrait-dots"></div>
+      <div class="about-inner">
+        <div class="about-visual reveal">
+          <div class="about-portrait-wrap">
+            <div class="about-portrait-frame">
+              <img src="assets/about-portrait.jpg" alt="Shiwam Kumar — Data Analyst in Roorkee" class="about-portrait-img" />
+              <div class="about-portrait-overlay"></div>
+              <div class="about-portrait-dots"></div>
+            </div>
+            <div class="about-portrait-label">DATA ANALYST · BCA FINAL YEAR · RIT ROORKEE</div>
           </div>
-          <div class="about-portrait-label">A HUMAN PERSPECTIVE ON DATA</div>
+        </div>
+
+        <div class="about-text reveal">
+          <h2 class="about-title">
+            Data is the<br/>starting point.<br/><em>Insights are the point.</em>
+          </h2>
+          <p class="about-body">
+            I'm a <strong>final-year Bachelor of Computer Applications (BCA) student</strong> at 
+            <strong>Roorkee Institute of Technology</strong> with a strong commitment to 
+            <strong>Data Analytics</strong> and practical foundations in 
+            <strong>Machine Learning and Generative AI</strong>.
+          </p>
+          <p class="about-body">
+            My core strength is bridging raw databases with high-level business strategy: from 
+            <strong>data cleaning and SQL-driven aggregations</strong> to building 
+            <strong>interactive Power BI KPI dashboards</strong> and predictive models that identify customer behavior and retention opportunities.
+          </p>
+          <p class="about-body">
+            Having completed a <strong>6-month Data Analyst Internship at Weintern Pvt Ltd</strong> 
+            (handling 10,000+ records, 20+ SQL queries, and 5+ dashboards), I am actively seeking my first 
+            <strong>full-time Data Analyst role</strong> to drive measurable impact for a forward-thinking data team.
+          </p>
+          <div class="about-actions">
+            <a href="#work" class="link-arrow" id="read-story-btn">Explore my projects ↗</a>
+            <a href="#experience" class="link-arrow" id="view-exp-btn">View internship experience ↗</a>
+          </div>
+          <div class="about-tags">
+            <span>ENTRY-LEVEL DATA ANALYST</span>
+            <span>BCA FINAL YEAR · RIT ROORKEE</span>
+            <span>SQL &amp; POWER BI</span>
+            <span>MACHINE LEARNING</span>
+            <span>GENERATIVE AI</span>
+          </div>
         </div>
       </div>
 
-      <div class="about-text reveal">
-        <h2 class="about-title">
-          Data is the<br/>starting point.<br/><em>Insights are the point.</em>
+      <!-- Tabs -->
+      <div class="tabs-section reveal">
+        <p class="tabs-label">WHAT I BRING TO THE TEAM</p>
+        <div class="tabs" role="tablist">
+          <button class="tab active" id="tab-analyze" data-tab="analyze" role="tab" aria-selected="true" aria-controls="tab-content">Analyze</button>
+          <button class="tab" id="tab-build" data-tab="build" role="tab" aria-selected="false" aria-controls="tab-content">Predict &amp; Model</button>
+          <button class="tab" id="tab-connect" data-tab="connect" role="tab" aria-selected="false" aria-controls="tab-content">Communicate Insights</button>
+        </div>
+        <div class="tab-content" id="tab-content" role="tabpanel" aria-labelledby="tab-analyze">
+          <h3 class="tab-title">Turn raw data into clarity.</h3>
+          <p class="tab-body">Data cleaning, exploratory data analysis, and schema transformation that turn messy, fragmented datasets into reliable business intelligence using Python, SQL, and Power BI.</p>
+          <a href="#work" class="link-arrow" id="explore-tab-btn">Explore verified projects ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="experience-section" id="experience">
+      <div class="section-header reveal">
+        <div class="section-num">
+          <span>02</span> / <span>VERIFIED WORK EXPERIENCE</span>
+        </div>
+        <span class="section-tagline">HANDS-ON ANALYTICS TRACK RECORD</span>
+      </div>
+
+      <div class="exp-headline reveal">
+        <h2>Proven in practice.<br/><em>Grounded in real data.</em></h2>
+        <p class="exp-desc">Verified internship experience delivering structured queries, data cleaning pipelines, and executive dashboards on real business datasets.</p>
+      </div>
+
+      <div class="exp-container reveal">
+        <div class="exp-card" id="exp-weintern">
+          <div class="exp-card-header">
+            <div class="exp-title-group">
+              <div class="exp-badge-row">
+                <span class="exp-badge exp-badge-internship">INTERNSHIP · REMOTE</span>
+                <span class="exp-period">Jan 2026 — Jun 2026 · 6 Months</span>
+              </div>
+              <h3 class="exp-role">Data Analyst Intern</h3>
+              <p class="exp-company">Weintern Pvt Ltd</p>
+            </div>
+            <div class="exp-location-tag">📍 Remote, India</div>
+          </div>
+
+          <div class="exp-responsibilities">
+            <div class="exp-point">
+              <span class="exp-bullet">✦</span>
+              <p><strong>Cleaned, preprocessed, and analyzed 10,000+ records</strong> using Python, Pandas, and NumPy to resolve missing values, address schema inconsistencies, and improve data quality for downstream analytics.</p>
+            </div>
+            <div class="exp-point">
+              <span class="exp-bullet">✦</span>
+              <p><strong>Authored 20+ SQL queries</strong> utilizing multi-table joins, subqueries, filtering, and aggregation to prepare structured datasets for ad-hoc business reporting.</p>
+            </div>
+            <div class="exp-point">
+              <span class="exp-bullet">✦</span>
+              <p><strong>Developed 5+ interactive dashboards and operational reports</strong> using Power BI, DAX, and Advanced Excel to monitor business performance metrics and track customer trends.</p>
+            </div>
+            <div class="exp-point">
+              <span class="exp-bullet">✦</span>
+              <p><strong>Executed exploratory and statistical analysis across 8+ variables</strong> using Matplotlib and Seaborn, identifying correlations, seasonality patterns, and actionable customer insights across 2+ projects.</p>
+            </div>
+          </div>
+
+          <div class="exp-skills-row">
+            <span class="exp-skill-tag">Python</span>
+            <span class="exp-skill-tag">SQL</span>
+            <span class="exp-skill-tag">Power BI</span>
+            <span class="exp-skill-tag">Pandas</span>
+            <span class="exp-skill-tag">NumPy</span>
+            <span class="exp-skill-tag">DAX</span>
+            <span class="exp-skill-tag">Advanced Excel</span>
+            <span class="exp-skill-tag">Matplotlib</span>
+            <span class="exp-skill-tag">Seaborn</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills-section" id="skills">
+      <div class="section-header reveal">
+        <div class="section-num">
+          <span>03</span> / <span>TECHNICAL SKILLS &amp; TOOLS</span>
+        </div>
+        <span class="section-tagline">STRUCTURED COMPETENCIES</span>
+      </div>
+
+      <div class="skills-headline reveal">
+        <h2>Skills are a foundation.<br/><em>Application drives decisions.</em></h2>
+        <p class="skills-lead">Organized by core role readiness: Data Analytics prioritized for recruiters, supported by Machine Learning, Deep Learning, NLP, and applied Generative AI.</p>
+      </div>
+
+      <div class="skills-grid reveal">
+
+        <!-- 1. Data Analytics (PRIMARY FOCUS) -->
+        <div class="skill-category skill-category-featured">
+          <div class="skill-category-header">
+            <h4>Data Analytics</h4>
+            <span class="skill-priority-badge">PRIMARY FOCUS</span>
+          </div>
+          <p class="skill-category-desc">Core competencies for full-time Data Analyst roles — data modeling, SQL queries, EDA, and executive dashboards.</p>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-core">Python</span>
+            <span class="skill-tag skill-tag-core">SQL</span>
+            <span class="skill-tag skill-tag-core">Excel</span>
+            <span class="skill-tag skill-tag-core">Power BI</span>
+            <span class="skill-tag skill-tag-core">Data Cleaning</span>
+            <span class="skill-tag skill-tag-core">Exploratory Data Analysis</span>
+            <span class="skill-tag skill-tag-core">KPI Reporting</span>
+            <span class="skill-tag skill-tag-core">Data Visualization</span>
+          </div>
+        </div>
+
+        <!-- 2. Libraries -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <h4>Libraries</h4>
+            <span class="skill-stage-badge">CORE DATA STACK</span>
+          </div>
+          <p class="skill-category-desc">Standard Python libraries utilized for data transformation, array manipulation, and visual storytelling.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+          </div>
+        </div>
+
+        <!-- 3. Tools & Databases -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <h4>Tools &amp; Databases</h4>
+            <span class="skill-stage-badge">WORKFLOW &amp; DATA</span>
+          </div>
+          <p class="skill-category-desc">Relational database systems and software development environments used across analytical pipelines.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- 4. Machine Learning -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <h4>Machine Learning</h4>
+            <span class="skill-stage-badge">APPLIED PREDICTIVE</span>
+          </div>
+          <p class="skill-category-desc">Supervised and unsupervised models applied to customer churn, segmentation, and business forecasting.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Supervised Learning</span>
+            <span class="skill-tag">Unsupervised Learning</span>
+            <span class="skill-tag">Regression</span>
+            <span class="skill-tag">Classification</span>
+            <span class="skill-tag">Clustering</span>
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">Model Evaluation</span>
+          </div>
+        </div>
+
+        <!-- 5. Deep Learning -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <h4>Deep Learning</h4>
+            <span class="skill-stage-badge">FOUNDATIONAL</span>
+          </div>
+          <p class="skill-category-desc">Neural architectures, activation functions, and optimization fundamentals studied and implemented.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Artificial Neural Networks (ANN)</span>
+            <span class="skill-tag">CNNs</span>
+            <span class="skill-tag">RNNs</span>
+            <span class="skill-tag">Backpropagation</span>
+            <span class="skill-tag">Activation Functions</span>
+            <span class="skill-tag">Optimization Algorithms</span>
+          </div>
+        </div>
+
+        <!-- 6. Natural Language Processing -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <h4>Natural Language Processing</h4>
+            <span class="skill-stage-badge">TEXT ANALYTICS</span>
+          </div>
+          <p class="skill-category-desc">Text mining pipelines, vectorization methods, sentiment analysis, and named entity extraction.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Text Preprocessing</span>
+            <span class="skill-tag">Tokenization</span>
+            <span class="skill-tag">Stemming &amp; Lemmatization</span>
+            <span class="skill-tag">TF-IDF</span>
+            <span class="skill-tag">Word Embeddings</span>
+            <span class="skill-tag">Sentiment Analysis</span>
+            <span class="skill-tag">Text Classification</span>
+            <span class="skill-tag">Named Entity Recognition</span>
+          </div>
+        </div>
+
+        <!-- 7. Generative AI -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <h4>Generative AI</h4>
+            <span class="skill-stage-badge">APPLIED EXPLORATION</span>
+          </div>
+          <p class="skill-category-desc">Applied exploration of LLMs, retrieval-augmented generation (RAG), and agentic workflows.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Large Language Models (LLMs)</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">Embeddings</span>
+            <span class="skill-tag">Vector Databases</span>
+            <span class="skill-tag">LLM API Integration</span>
+            <span class="skill-tag">LangChain</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== WORK / PROJECTS SECTION ===== -->
+    <section class="work-section" id="work">
+      <div class="section-header reveal">
+        <div class="section-num">
+          <span>04</span> / <span>VERIFIED PROJECTS</span>
+        </div>
+        <span class="section-tagline">REAL DATA · QUANTIFIABLE RESULTS</span>
+      </div>
+
+      <div class="work-headline reveal">
+        <h2>Ideas are a start.<br/><em>This is the work.</em></h2>
+        <p class="work-desc">From raw transaction datasets and customer records to interactive Power BI dashboards and predictive ML models — with verified findings and complete business problem breakdowns.</p>
+      </div>
+
+      <!-- Project 1: Product Funnel, Conversion & Retention Analytics -->
+      <article class="project-card reveal" id="project-1">
+        <div class="project-preview">
+          <div class="project-preview-inner">
+            <div class="project-mockup p1-mockup">
+              <div class="mockup-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url-bar">funnel-conversion-analytics</span>
+              </div>
+              <div class="mockup-content p1-content">
+                <div class="mockup-chart-bar" style="--h:85%" title="Product Views"></div>
+                <div class="mockup-chart-bar" style="--h:62%" title="Add to Cart"></div>
+                <div class="mockup-chart-bar" style="--h:42%" title="Checkout Initiated"></div>
+                <div class="mockup-chart-bar" style="--h:28%" title="Purchase Completed"></div>
+                <div class="mockup-chart-bar" style="--h:70%" title="Cohort Retention 30d"></div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag-label">E-COMMERCE &amp; PRODUCT ANALYTICS</span>
+        </div>
+        <div class="project-info">
+          <span class="project-num">01</span>
+          <span class="project-category">E-COMMERCE &amp; PRODUCT ANALYTICS</span>
+          <h3 class="project-title">Product Funnel, Conversion &amp; Retention Analytics</h3>
+          <p class="project-body">
+            <strong>Business Problem:</strong> Digital storefronts experience significant revenue leakage across checkout stages without clear attribution of user drop-offs, retention cohorts, or acquisition-channel performance.
+            <br/><br/>
+            <strong>Implemented Solution:</strong> Analyzed <strong>3,040 users and 15,942 events</strong> using Python and SQL. Evaluated user journeys, funnel drop-offs, conversion rates, and cohort-based customer retention. Built an interactive Power BI dashboard to track conversion rates and cohort retention, and proposed an A/B test with defined success and guardrail metrics.
+          </p>
+          <div class="project-verified-highlight">
+            <span class="highlight-label">VERIFIED METRICS:</span> Analyzed 3,040 users and 15,942 events; tracked conversion rates and cohort-based retention; designed an A/B test targeting the highest-drop-off funnel stage with guardrail metrics.
+          </div>
+          <div class="project-skills">
+            <span class="proj-skill">Python</span>
+            <span class="proj-skill">Pandas</span>
+            <span class="proj-skill">PostgreSQL</span>
+            <span class="proj-skill">Power BI</span>
+            <span class="proj-skill">Excel</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-details" data-project="p1" aria-haspopup="dialog">View Details ↗</button>
+            <a href="https://github.com/Shiwam-26" class="btn-repo-link" target="_blank" rel="noopener">GitHub Profile ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Customer Shopping Behavior Analysis -->
+      <article class="project-card project-card-reverse reveal" id="project-2">
+        <div class="project-preview">
+          <div class="project-preview-inner">
+            <div class="project-mockup p2-mockup">
+              <div class="mockup-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url-bar">customer-shopping-behavior</span>
+              </div>
+              <div class="mockup-content p2-content">
+                <div class="ml-node n1" title="Customer Demographics"></div>
+                <div class="ml-node n2" title="Purchase Frequency & Value"></div>
+                <div class="ml-node n3" title="Subscription & Retention"></div>
+                <div class="ml-lines"></div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag-label">RETAIL ANALYTICS &amp; CUSTOMER INTELLIGENCE</span>
+        </div>
+        <div class="project-info">
+          <span class="project-num">02</span>
+          <span class="project-category">RETAIL ANALYTICS &amp; CUSTOMER INTELLIGENCE</span>
+          <h3 class="project-title">Customer Shopping Behavior Analysis</h3>
+          <p class="project-body">
+            <strong>Business Problem:</strong> Retailers need to understand customer purchasing patterns, payment preferences, and subscription dynamics to optimize promotional spend and increase customer lifetime value.
+            <br/><br/>
+            <strong>Implemented Solution:</strong> Analyzed <strong>3,900+ customer records</strong> across demographic, category, and transactional dimensions. Authored 20+ SQL queries to evaluate revenue by gender, discount elasticity, shipping speed impact, and subscription status spend. Built an interactive Power BI dashboard tracking revenue KPIs, average purchase values, and review ratings.
+          </p>
+          <div class="project-verified-highlight">
+            <span class="highlight-label">VERIFIED RESULTS:</span> Analyzed 3,900+ records; proved subscribed customers generate steady repeat order volume; identified high-margin product categories with highest customer review ratings.
+          </div>
+          <div class="project-skills">
+            <span class="proj-skill">Python</span>
+            <span class="proj-skill">SQL</span>
+            <span class="proj-skill">Power BI</span>
+            <span class="proj-skill">Pandas</span>
+            <span class="proj-skill">Advanced Excel</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-details" data-project="p2" aria-haspopup="dialog">View Details ↗</button>
+            <a href="https://github.com/Shiwam-26" class="btn-repo-link" target="_blank" rel="noopener">GitHub Profile ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Customer Churn Prediction & Retention Analysis -->
+      <article class="project-card reveal" id="project-3">
+        <div class="project-preview">
+          <div class="project-preview-inner">
+            <div class="project-mockup p3-mockup">
+              <div class="mockup-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url-bar">churn-prediction-model</span>
+              </div>
+              <div class="mockup-content p3-content">
+                <div class="line-chart">
+                  <svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true">
+                    <polyline points="0,70 30,55 60,60 90,30 120,40 150,20 180,25 200,10" 
+                              fill="none" stroke="#b8860b" stroke-width="2"/>
+                    <polyline points="0,70 30,55 60,60 90,30 120,40 150,20 180,25 200,10" 
+                              fill="url(#grad)" opacity="0.3"/>
+                    <defs>
+                      <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#b8860b"/>
+                        <stop offset="100%" stop-color="transparent"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag-label">MACHINE LEARNING &amp; PREDICTIVE ANALYTICS</span>
+        </div>
+        <div class="project-info">
+          <span class="project-num">03</span>
+          <span class="project-category">MACHINE LEARNING &amp; PREDICTIVE ANALYTICS</span>
+          <h3 class="project-title">Customer Churn Prediction &amp; Retention Analysis</h3>
+          <p class="project-body">
+            <strong>Business Problem:</strong> Customer churn threatens subscription business models; acquiring new customers is 5x to 7x more costly than retaining existing ones.
+            <br/><br/>
+            <strong>Implemented Solution:</strong> Conducted end-to-end predictive modeling on <strong>7,043 customer records</strong> covering demographics, tenure, contract types, service bundles, and billing history. Handled missing data, categorical encoding, and feature engineering. Trained and evaluated a Logistic Regression classification model with standardized features.
+          </p>
+          <div class="project-verified-highlight">
+            <span class="highlight-label">VERIFIED METRICS:</span> Achieved <strong>80% accuracy</strong> in churn classification across 7,043 customer accounts; isolated month-to-month contracts and high monthly charges as top churn risk factors to design proactive retention interventions.
+          </div>
+          <div class="project-skills">
+            <span class="proj-skill">Python</span>
+            <span class="proj-skill">Scikit-learn</span>
+            <span class="proj-skill">Pandas</span>
+            <span class="proj-skill">NumPy</span>
+            <span class="proj-skill">Matplotlib</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-details" data-project="p3" aria-haspopup="dialog">View Details ↗</button>
+            <a href="https://github.com/Shiwam-26" class="btn-repo-link" target="_blank" rel="noopener">GitHub Profile ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: ResearchPilot AI -->
+      <article class="project-card project-card-reverse reveal" id="project-4">
+        <div class="project-preview">
+          <div class="project-preview-inner">
+            <div class="project-mockup p4-mockup">
+              <div class="mockup-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url-bar">researchpilot-ai</span>
+              </div>
+              <div class="mockup-content p4-content">
+                <div class="agent-flow-diagram">
+                  <div class="agent-badge">Search Agent</div>
+                  <div class="agent-arrow">→</div>
+                  <div class="agent-badge">Scraper Agent</div>
+                  <div class="agent-arrow">→</div>
+                  <div class="agent-badge">Writer &amp; Critic</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="project-tag-label">GENERATIVE AI &amp; AUTONOMOUS AGENTS</span>
+        </div>
+        <div class="project-info">
+          <span class="project-num">04</span>
+          <span class="project-category">GENERATIVE AI &amp; AUTONOMOUS AGENTS</span>
+          <h3 class="project-title">ResearchPilot AI — Autonomous Multi-Agent Research System</h3>
+          <p class="project-body">
+            <strong>Technical Problem:</strong> Synthesizing deep technical and market research across disparate web sources is highly manual and prone to hallucinations.
+            <br/><br/>
+            <strong>Implemented Solution:</strong> Developed a modular, autonomous multi-agent pipeline using LangChain and Mistral AI (<code>codestral-2508</code>). Orchestrated a dedicated Web Search Agent for targeted discovery, a Reader Agent for URL scraping and document extraction, a Writer Agent for synthesis, and a Critic Agent for factual validation.
+          </p>
+          <div class="project-verified-highlight">
+            <span class="highlight-label">VERIFIED CODEBASE:</span> Active GitHub repository with modular agents (<code>agent.py</code>, <code>pipeline.py</code>, <code>app.py</code>) implementing automated multi-step research synthesis.
+          </div>
+          <div class="project-skills">
+            <span class="proj-skill">Python</span>
+            <span class="proj-skill">LangChain</span>
+            <span class="proj-skill">Mistral AI</span>
+            <span class="proj-skill">Web Scraping</span>
+            <span class="proj-skill">Multi-Agent Systems</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-details" data-project="p4" aria-haspopup="dialog">View Details ↗</button>
+            <a href="https://github.com/Shiwam-26/researchpilot-ai" class="btn-repo-link" target="_blank" rel="noopener">View Repository ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ===== EDUCATION & CERTIFICATIONS SECTION ===== -->
+    <section class="education-section" id="education">
+      <div class="section-header reveal">
+        <div class="section-num">
+          <span>05</span> / <span>EDUCATION &amp; CERTIFICATIONS</span>
+        </div>
+        <span class="section-tagline">ACADEMIC FOUNDATION · PROFESSIONAL CREDENTIALS</span>
+      </div>
+
+      <div class="edu-headline reveal">
+        <h2>Rigorous foundation.<br/><em>Industry-aligned learning.</em></h2>
+        <p class="edu-desc">Combining formal computer science education with professional instruction in AI-powered data analytics and real-world corporate job simulations.</p>
+      </div>
+
+      <div class="edu-layout reveal">
+
+        <!-- LEFT: Degrees -->
+        <div class="edu-col">
+          <div class="edu-col-label">FORMAL EDUCATION</div>
+
+          <div class="edu-card" id="edu-bca">
+            <div class="edu-card-top">
+              <div class="edu-icon" aria-hidden="true">🎓</div>
+              <div class="edu-meta">
+                <span class="edu-period">Jul 2024 — Jul 2027</span>
+                <span class="edu-location">📍 Roorkee, Uttarakhand</span>
+              </div>
+            </div>
+            <h3 class="edu-degree">Bachelor of Computer Applications <span class="edu-short">(BCA)</span></h3>
+            <p class="edu-institute">Roorkee Institute of Technology</p>
+            <p class="edu-detail">Pursuing full-time degree with coursework focused on computer science fundamentals, data structures, algorithms, database management systems (DBMS), and Python programming — forming the technical backbone of my analytics career.</p>
+            <div class="edu-badge">PURSUING · FINAL YEAR · 2024–2027</div>
+          </div>
+
+          <div class="edu-card" id="edu-class12">
+            <div class="edu-card-top">
+              <div class="edu-icon" aria-hidden="true">📚</div>
+              <div class="edu-meta">
+                <span class="edu-period">Completed Mar 2024</span>
+                <span class="edu-location">📍 GopalGanj, Bihar</span>
+              </div>
+            </div>
+            <h3 class="edu-degree">Senior Secondary Examination <span class="edu-short">(Class XII)</span></h3>
+            <p class="edu-institute">P.D.S.D. Inter College</p>
+            <p class="edu-detail">Completed senior secondary schooling with rigorous coursework in Science and Mathematics, building strong quantitative and analytical problem-solving fundamentals.</p>
+            <div class="edu-badge">COMPLETED · 2024</div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Certifications -->
+        <div class="edu-col edu-col-certs">
+          <div class="edu-col-label">PROFESSIONAL CERTIFICATIONS</div>
+
+          <div class="cert-card" id="cert-codewithharry">
+            <div class="cert-stripe"></div>
+            <div class="cert-body">
+              <div class="cert-header">
+                <div class="cert-badge-icon" aria-hidden="true">⚡</div>
+                <div class="cert-issuer-info">
+                  <span class="cert-issuer">CodeWithHarry</span>
+                  <span class="cert-period">Jan 2026 — Jun 2026</span>
+                </div>
+              </div>
+              <h3 class="cert-title">Ultimate Job-Ready AI-Powered Data Analytics Course</h3>
+              <p class="cert-desc">Intensive, professional-grade curriculum covering Python for data analysis, complex SQL queries, Power BI DAX modeling, machine learning, and AI-powered analytical workflows.</p>
+              <div class="cert-tags">
+                <span>Python</span><span>SQL</span><span>Power BI</span><span>Machine Learning</span><span>AI Analytics</span>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-verified">✓ Professionally Instructed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card" id="cert-deloitte">
+            <div class="cert-stripe cert-stripe-gold"></div>
+            <div class="cert-body">
+              <div class="cert-header">
+                <div class="cert-badge-icon" aria-hidden="true">🏢</div>
+                <div class="cert-issuer-info">
+                  <span class="cert-issuer">Deloitte &amp; Forage</span>
+                  <span class="cert-period">Completed Jan 2026</span>
+                </div>
+              </div>
+              <h3 class="cert-title">Deloitte Data Analytics Job Simulation</h3>
+              <p class="cert-desc">Completed official Deloitte simulation via Forage — applying analytical methodologies to business case studies, data hygiene validation, and executive stakeholder reporting.</p>
+              <div class="cert-tags">
+                <span>Data Analytics</span><span>Business Intelligence</span><span>Industry Simulation</span>
+              </div>
+              <div class="cert-footer">
+                <span class="cert-verified cert-verified-gold">✓ Industry Certified · Deloitte</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner reveal">
+        <div class="contact-label">06 / LET'S CONNECT</div>
+        <h2 class="contact-title">
+          Got an opportunity?<br/><em>Let's talk data.</em>
         </h2>
-        <p class="about-body">
-          I connect engineering, analysis, and business strategy.
+        <p class="contact-body">
+          I am actively interviewing for <strong>Entry-Level Data Analyst</strong> roles, analytics internships, and data projects. Whether you have an open position or want to discuss analytical solutions, my inbox is open.
         </p>
-        <p class="about-body">
-          Since Jan 2026, I've been working as a Data Analyst—turning complex datasets 
-          into clear narratives, building ML models, and creating dashboards 
-          that actually <strong>drive decisions</strong>.
-        </p>
-        <a href="#work" class="link-arrow" id="read-story-btn">Read my story ↗</a>
-        <div class="about-tags">
-          <span>FREELANCE ANALYST</span>
-          <span>INDUSTRY INSIGHTS</span>
-          <span>BUILDER'S AMBITION</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Tabs -->
-    <div class="tabs-section reveal">
-      <p class="tabs-label">STRUCTURE</p>
-      <div class="tabs">
-        <button class="tab active" id="tab-analyze" data-tab="analyze">Analyze</button>
-        <button class="tab" id="tab-build" data-tab="build">Build</button>
-        <button class="tab" id="tab-connect" data-tab="connect">Connect</button>
-      </div>
-      <div class="tab-content" id="tab-content">
-        <h3 class="tab-title">Turn raw data into clarity.</h3>
-        <p class="tab-body">Statistical analysis, data cleaning, and visualization that transforms messy datasets into actionable business intelligence.</p>
-        <a href="#work" class="link-arrow" id="explore-tab-btn">Explore the projects ↗</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS SECTION ===== -->
-  <section class="skills-section" id="skills">
-    <div class="section-header reveal">
-      <div class="section-num">
-        <span>02</span> / <span>SKILLS &amp; TOOLS</span>
-      </div>
-      <span class="section-tagline">BUILT. FORGED. PUT INTO THE WORLD.</span>
-    </div>
-
-    <div class="skills-headline reveal">
-      <h2>Skills are a base.<br/><em>Application is everything.</em></h2>
-    </div>
-
-    <div class="skills-grid reveal">
-      <div class="skill-category">
-        <h4>Languages</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">R</span>
-          <span class="skill-tag">HTML/CSS</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h4>Libraries</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Seaborn</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h4>Analytics &amp; BI</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">Tableau</span>
-          <span class="skill-tag">Excel</span>
-          <span class="skill-tag">Google Analytics</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h4>Machine Learning</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">Supervised Learning</span>
-          <span class="skill-tag">Unsupervised Learning</span>
-          <span class="skill-tag">Regression</span>
-          <span class="skill-tag">Classification</span>
-          <span class="skill-tag">Clustering</span>
-          <span class="skill-tag">Feature Engineering</span>
-          <span class="skill-tag">Model Evaluation</span>
-          <span class="skill-tag">Scikit-learn</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h4>Databases &amp; Cloud</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Google Colab</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h4>Deep Learning</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">Artificial Neural Networks (ANN)</span>
-          <span class="skill-tag">Convolutional Neural Networks (CNN)</span>
-          <span class="skill-tag">Recurrent Neural Networks (RNN)</span>
-          <span class="skill-tag">Backpropagation</span>
-          <span class="skill-tag">Activation Functions</span>
-          <span class="skill-tag">Loss Functions</span>
-          <span class="skill-tag">Optimization Algorithms (SGD, Adam)</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h4>GenAI</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">Large Language Models (LLMs)</span>
-          <span class="skill-tag">Prompt Engineering</span>
-          <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
-          <span class="skill-tag">AI Agents</span>
-          <span class="skill-tag">LangChain</span>
-          <span class="skill-tag">Vector Databases</span>
-          <span class="skill-tag">Embeddings</span>
-          <span class="skill-tag">LLM API Integration</span>
-          <span class="skill-tag">Text Generation</span>
-          <span class="skill-tag">Fine-Tuning</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h4>Natural Language Processing (NLP)</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">Text Preprocessing</span>
-          <span class="skill-tag">Tokenization</span>
-          <span class="skill-tag">Stemming &amp; Lemmatization</span>
-          <span class="skill-tag">Stop Word Removal</span>
-          <span class="skill-tag">Bag of Words (BoW)</span>
-          <span class="skill-tag">TF-IDF</span>
-          <span class="skill-tag">Word Embeddings</span>
-          <span class="skill-tag">Sentiment Analysis</span>
-          <span class="skill-tag">Named Entity Recognition (NER)</span>
-          <span class="skill-tag">Text Classification</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== WORK / PROJECTS SECTION ===== -->
-  <section class="work-section" id="work">
-    <div class="section-header reveal">
-      <div class="section-num">
-        <span>03</span> / <span>SELECTED WORK</span>
-      </div>
-      <span class="section-tagline">BUILT. FORGED. PUT INTO THE WORLD.</span>
-    </div>
-
-    <div class="work-headline reveal">
-      <h2>Ideas are a start.<br/><em>This is the work.</em></h2>
-      <p class="work-desc">From raw datasets to production models—a few things I've helped bring to life.</p>
-    </div>
-
-    <!-- Project 1 -->
-    <div class="project-card reveal" id="project-1">
-      <div class="project-preview">
-        <div class="project-preview-inner">
-          <div class="project-mockup p1-mockup">
-            <div class="mockup-bar">
-              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              <span class="url-bar">dashboard.shiwam.dev</span>
-            </div>
-            <div class="mockup-content p1-content">
-              <div class="mockup-chart-bar" style="--h:60%"></div>
-              <div class="mockup-chart-bar" style="--h:85%"></div>
-              <div class="mockup-chart-bar" style="--h:45%"></div>
-              <div class="mockup-chart-bar" style="--h:70%"></div>
-              <div class="mockup-chart-bar" style="--h:90%"></div>
-              <div class="mockup-chart-bar" style="--h:55%"></div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="project-link-btn" id="proj1-link">↗</a>
-        <span class="project-tag-label">ANALYTICS &amp; BI</span>
-      </div>
-      <div class="project-info">
-        <span class="project-num">01</span>
-        <span class="project-category">ANALYTICS &amp; BI</span>
-        <h3 class="project-title">Product Funnel, Conversion &amp; Retention Analytics</h3>
-        <p class="project-body">End-to-end funnel analysis tracking user drop-off, conversion rates, and retention cohorts — delivered as an interactive Power BI dashboard backed by PostgreSQL and Python.</p>
-        <div class="project-skills">
-          <span class="proj-skill">Python</span>
-          <span class="proj-skill">Pandas</span>
-          <span class="proj-skill">PostgreSQL</span>
-          <span class="proj-skill">Power BI</span>
-          <span class="proj-skill">Excel</span>
-        </div>
-        <a href="#" class="link-arrow" id="proj1-story">Explore the story ↗</a>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-card project-card-reverse reveal" id="project-2">
-      <div class="project-preview">
-        <div class="project-preview-inner">
-          <div class="project-mockup p2-mockup">
-            <div class="mockup-bar">
-              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              <span class="url-bar">model.shiwam.dev</span>
-            </div>
-            <div class="mockup-content p2-content">
-              <div class="ml-node n1"></div>
-              <div class="ml-node n2"></div>
-              <div class="ml-node n3"></div>
-              <div class="ml-lines"></div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="project-link-btn" id="proj2-link">↗</a>
-        <span class="project-tag-label">MACHINE LEARNING</span>
-      </div>
-      <div class="project-info">
-        <span class="project-num">02</span>
-        <span class="project-category">MACHINE LEARNING</span>
-        <h3 class="project-title">ML Prediction Model</h3>
-        <p class="project-body">A machine learning pipeline built with Python and Scikit-learn. Handles data preprocessing, feature engineering, model training, and evaluation.</p>
-        <a href="#" class="link-arrow" id="proj2-story">Explore the story ↗</a>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-card reveal" id="project-3">
-      <div class="project-preview">
-        <div class="project-preview-inner">
-          <div class="project-mockup p3-mockup">
-            <div class="mockup-bar">
-              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              <span class="url-bar">analysis.shiwam.dev</span>
-            </div>
-            <div class="mockup-content p3-content">
-              <div class="line-chart">
-                <svg viewBox="0 0 200 80" preserveAspectRatio="none">
-                  <polyline points="0,70 30,55 60,60 90,30 120,40 150,20 180,25 200,10" 
-                            fill="none" stroke="#b8860b" stroke-width="2"/>
-                  <polyline points="0,70 30,55 60,60 90,30 120,40 150,20 180,25 200,10" 
-                            fill="url(#grad)" opacity="0.3"/>
-                  <defs>
-                    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stop-color="#b8860b"/>
-                      <stop offset="100%" stop-color="transparent"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="project-link-btn" id="proj3-link">↗</a>
-        <span class="project-tag-label">MACHINE LEARNING</span>
-      </div>
-      <div class="project-info">
-        <span class="project-num">03</span>
-        <span class="project-category">MACHINE LEARNING</span>
-        <h3 class="project-title">Customer Churn Prediction &amp; Retention Analysis</h3>
-        <p class="project-body">Built a supervised ML pipeline to predict customer churn, combining EDA, feature engineering, and classification models — delivering actionable retention strategies from data.</p>
-        <div class="project-skills">
-          <span class="proj-skill">Python</span>
-          <span class="proj-skill">Machine Learning</span>
-        </div>
-        <a href="#" class="link-arrow" id="proj3-story">Explore the story ↗</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== EDUCATION SECTION ===== -->
-  <section class="education-section" id="education">
-    <div class="section-header reveal">
-      <div class="section-num">
-        <span>04</span> / <span>EDUCATION &amp; CERTIFICATIONS</span>
-      </div>
-      <span class="section-tagline">KNOWLEDGE. CREDENTIALS. CRAFT.</span>
-    </div>
-
-    <div class="edu-headline reveal">
-      <h2>Trained by the best.<br/><em>Certified to prove it.</em></h2>
-      <p class="edu-desc">My data analytics expertise comes from professional instruction and real-world industry simulations — not just self-study.</p>
-    </div>
-
-    <div class="edu-layout reveal">
-
-      <!-- LEFT: Degrees -->
-      <div class="edu-col">
-        <div class="edu-col-label">FORMAL EDUCATION</div>
-
-        <div class="edu-card" id="edu-bca">
-          <div class="edu-card-top">
-            <div class="edu-icon">🎓</div>
-            <div class="edu-meta">
-              <span class="edu-period">Jul 2024 — Jul 2027</span>
-              <span class="edu-location">📍 Roorkee, Uttarakhand</span>
-            </div>
-          </div>
-          <h3 class="edu-degree">Bachelor of Computer Applications <span class="edu-short">(BCA)</span></h3>
-          <p class="edu-institute">Roorkee Institute of Technology</p>
-          <p class="edu-detail">Pursuing a full-time degree with a focus on computer science fundamentals, data structures, algorithms, and software engineering — building the technical backbone that powers my analytics work.</p>
-          <div class="edu-badge">PURSUING · 2024–2027</div>
+        <div class="contact-cta-group">
+          <a href="mailto:shiwam808460@gmail.com" class="contact-cta" id="contact-email-btn">shiwam808460@gmail.com ↗</a>
+          <button class="btn-copy-email" id="copy-email-btn" title="Copy email address to clipboard" aria-label="Copy email address to clipboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span id="copy-btn-text">Copy Email</span>
+          </button>
         </div>
 
-        <div class="edu-card" id="edu-class12">
-          <div class="edu-card-top">
-            <div class="edu-icon">📚</div>
-            <div class="edu-meta">
-              <span class="edu-period">Mar 2024</span>
-              <span class="edu-location">📍 GopalGanj, Bihar</span>
-            </div>
-          </div>
-          <h3 class="edu-degree">Senior Secondary Examination <span class="edu-short">(Class XII)</span></h3>
-          <p class="edu-institute">P.D.S.D. Inter College</p>
-          <p class="edu-detail">Completed senior secondary education with a strong foundation in science and mathematics — the stepping stone to my computer science journey.</p>
-          <div class="edu-badge">COMPLETED · 2024</div>
-        </div>
-      </div>
-
-      <!-- RIGHT: Certifications -->
-      <div class="edu-col edu-col-certs">
-        <div class="edu-col-label">PROFESSIONAL CERTIFICATIONS</div>
-
-        <div class="cert-card" id="cert-codewithharry">
-          <div class="cert-stripe"></div>
-          <div class="cert-body">
-            <div class="cert-header">
-              <div class="cert-badge-icon">⚡</div>
-              <div class="cert-issuer-info">
-                <span class="cert-issuer">CodeWithHarry</span>
-                <span class="cert-period">Jan 2026 — Jun 2026</span>
-              </div>
-            </div>
-            <h3 class="cert-title">Ultimate Job-Ready AI-Powered Data Analytics Course</h3>
-            <p class="cert-desc">An intensive, professional-grade course covering Python for data analysis, SQL, Power BI, machine learning, and AI-powered analytics workflows — taught by one of India's most trusted tech educators.</p>
-            <div class="cert-tags">
-              <span>Python</span><span>SQL</span><span>Power BI</span><span>Machine Learning</span><span>AI Analytics</span>
-            </div>
-            <div class="cert-footer">
-              <span class="cert-verified">✓ Professionally Instructed</span>
-            </div>
-          </div>
+        <div class="contact-meta-info">
+          <span class="contact-phone">📞 +91-8077624510</span>
+          <span class="contact-sep">·</span>
+          <span class="contact-location">📍 Roorkee, Uttarakhand, India</span>
         </div>
 
-        <div class="cert-card" id="cert-deloitte">
-          <div class="cert-stripe cert-stripe-gold"></div>
-          <div class="cert-body">
-            <div class="cert-header">
-              <div class="cert-badge-icon">🏢</div>
-              <div class="cert-issuer-info">
-                <span class="cert-issuer">Deloitte &amp; Forage</span>
-                <span class="cert-period">Jan 2026</span>
-              </div>
-            </div>
-            <h3 class="cert-title">Deloitte Data Analytics Job Simulation</h3>
-            <p class="cert-desc">Completed Deloitte's official data analytics job simulation via Forage — gaining hands-on experience with real business scenarios, data-driven decision making, and industry-level analytics practices.</p>
-            <div class="cert-tags">
-              <span>Data Analytics</span><span>Business Intelligence</span><span>Industry Simulation</span>
-            </div>
-            <div class="cert-footer">
-              <span class="cert-verified cert-verified-gold">✓ Industry Certified · Deloitte</span>
-            </div>
-          </div>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/shiwamkumar26" class="social-link" id="linkedin-link" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/Shiwam-26" class="social-link" id="github-link" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="assets/resume.pdf" class="social-link" id="footer-resume-link" download="Shiwam_Kumar_Data_Analyst_Resume.pdf" target="_blank" rel="noopener">Resume PDF ↗</a>
+          <a href="mailto:shiwam808460@gmail.com" class="social-link" id="email-link">Email Direct ↗</a>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- ===== CONTENT / SPEAKING SECTION ===== -->
-  <section class="content-section" id="content">
-    <div class="section-header reveal">
-      <div class="section-num">
-        <span>05</span> / <span>CONTENT &amp; LEARNING</span>
-      </div>
-    </div>
-
-    <div class="content-headline reveal">
-      <h2>More ways <em>I build.</em></h2>
-    </div>
-
-    <div class="content-grid reveal">
-      <div class="content-card" id="content-card-1">
-        <div class="content-card-icon">📊</div>
-        <h3>Data Notebooks</h3>
-        <p>Jupyter notebooks and Python scripts shared publicly for the community. Clean code, clear explanations.</p>
-        <a href="#" class="link-arrow" id="notebooks-link">Explore →</a>
-      </div>
-      <div class="content-card" id="content-card-2">
-        <div class="content-card-icon">📝</div>
-        <h3>Case Studies</h3>
-        <p>Deep dives into real-world data problems and the analytical approaches used to solve them step-by-step.</p>
-        <a href="#" class="link-arrow" id="casestudies-link">Read more →</a>
-      </div>
-      <div class="content-card" id="content-card-3">
-        <div class="content-card-icon">🎯</div>
-        <h3>Freelance Work</h3>
-        <p>Open to collaborating on analytics projects, dashboard design, or ML model development. Let's create impact.</p>
-        <a href="#contact" class="link-arrow" id="freelance-link">Get in touch →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT SECTION ===== -->
-  <section class="contact-section" id="contact">
-    <div class="contact-inner reveal">
-      <div class="contact-label">06 / LET'S CONNECT</div>
-      <h2 class="contact-title">
-        Got a project?<br/><em>Let's talk data.</em>
-      </h2>
-      <p class="contact-body">
-        Whether it's a freelance project, collaboration, or just wanting to discuss data — I'm always open to a good conversation.
-      </p>
-      <a href="mailto:shiwam808460@gmail.com" class="contact-cta" id="contact-email-btn">shiwam808460@gmail.com ↗</a>
-
-      <div class="contact-socials">
-        <a href="https://www.linkedin.com/in/shiwamkumar26" class="social-link" id="linkedin-link" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/Shiwam-26" class="social-link" id="github-link" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:shiwam808460@gmail.com" class="social-link" id="email-link">Email</a>
-      </div>
-    </div>
-  </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-inner">
       <span class="footer-name">Shiwam Kumar</span>
-      <span class="footer-copy">© 2024 — All Rights Reserved</span>
-      <span class="footer-role">Data Analyst</span>
+      <span class="footer-copy">© 2026 — All Rights Reserved · Entry-Level Data Analyst</span>
+      <span class="footer-role">Python · SQL · Power BI · ML &amp; GenAI</span>
     </div>
   </footer>
+
+  <!-- ===== PROJECT DETAILS MODAL ===== -->
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close project details dialog">✕</button>
+      <div class="modal-content" id="modal-dynamic-content">
+        <!-- Dynamically injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-hidden="true">
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
 
   <script src="script.js"></script>
 </body>
