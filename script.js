@@ -530,6 +530,45 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =============================================
+  // RELIABLE RESUME DOWNLOAD HANDLER (BLOB STREAM)
+  // =============================================
+  const setupDownloadHandler = (btnId) => {
+    const btn = document.getElementById(btnId);
+    if (!btn) return;
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      btn.style.opacity = '0.7';
+
+      fetch('assets/resume.pdf')
+        .then(res => {
+          if (!res.ok) throw new Error('File not accessible');
+          return res.blob();
+        })
+        .then(blob => {
+          const blobUrl = window.URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = blobUrl;
+          link.download = 'Shiwam_Kumar_Data_Analyst_Resume.pdf';
+          document.body.appendChild(link);
+          link.click();
+          setTimeout(() => {
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(blobUrl);
+            btn.style.opacity = '1';
+          }, 300);
+        })
+        .catch(() => {
+          window.location.href = 'assets/resume.pdf';
+          btn.style.opacity = '1';
+        });
+    });
+  };
+
+  setupDownloadHandler('download-resume-btn');
+  setupDownloadHandler('footer-resume-link');
+
+  // =============================================
   // HOVER EFFECT — Project Cards (Desktop only)
   // =============================================
   if (!isTouchDevice && !prefersReducedMotion) {
