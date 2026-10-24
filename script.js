@@ -3,6 +3,14 @@
    Interactive Behaviors, Project Modal & Recruiter Utilities
    ============================================= */
 
+// Automatically strip tracking/referral parameters (?utm_source=chatgpt.com, etc.) from address bar
+if (window.location.search && (window.location.search.includes('utm_') || window.location.search.includes('chatgpt'))) {
+  try {
+    const cleanUrl = window.location.origin + window.location.pathname + window.location.hash;
+    window.history.replaceState(null, document.title, cleanUrl);
+  } catch (e) {}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // =============================================
