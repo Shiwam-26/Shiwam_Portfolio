@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shiwam Kumar — Data Analyst. I transform raw data into meaningful insights, build analytical tools, and help businesses make data-driven decisions." />
+  <title>Shiwam Kumar — Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">Shiwam Kumar</div>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#work" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="mailto:shiwam808460@gmail.com" class="nav-cta" id="nav-cta-btn">Let's talk ↗</a>
+    </div>
+    <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link" id="mob-about">About</a>
+    <a href="#skills" class="mobile-link" id="mob-skills">Skills</a>
+    <a href="#work" class="mobile-link" id="mob-projects">Projects</a>
+    <a href="#education" class="mobile-link" id="mob-education">Education</a>
+    <a href="#contact" class="mobile-link" id="mob-contact">Contact</a>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-top-bar">
+      <span class="hero-tag">DATA ANALYST · PROBLEM SOLVER · STORYTELLER</span>
+      <span class="hero-location">BASED IN INDIA · THINKING GLOBAL</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-side-label">
+        <span class="label-num">01</span>
+        <span class="label-divider">/</span>
+        <span class="label-text">PRESENCE</span>
+      </div>
+
+
+      <div class="hero-center">
+        <div class="hero-profile-wrap">
+          <div class="hero-profile-img" id="hero-profile">
+            <img src="assets/profile.jpg" alt="Shiwam Kumar" />
+          </div>
+        </div>
+        <p class="hero-sub">A HUMAN PERSPECTIVE ON DATA</p>
+        <h1 class="hero-title">
+          Shiwam <em>Kumar</em>
+        </h1>
+        <p class="hero-desc">
+          I analyze data, build dashboards,<br/>
+          and help businesses grow smarter.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary" id="explore-work-btn">Explore my work ↓</a>
+          <a href="#contact" class="btn-outline" id="start-convo-btn">Start a conversation ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-right-labels">
+        <span>ENGINEERING</span>
+        <span>ANALYSIS</span>
+        <span>DATA VISION</span>
+      </div>
+    </div>
+
+    <div class="hero-bottom-bar">
+      <span class="scroll-indicator">SCROLL TO DISCOVER ↓</span>
+      <span class="hero-since">ANALYZING &amp; BUILDING SINCE 2026</span>
+      <div class="noise-btn" id="noise-btn">
+        <span>MOTION ON</span>
+        <div class="noise-dot"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about-section" id="about">
+    <div class="section-header reveal">
+      <div class="section-num">
+        <span>01</span> / <span>THE PERSON BEHIND THE WORK</span>
+      </div>
+      <span class="section-tagline">A CONNECTED PERSPECTIVE</span>
+    </div>
+
+    <div class="about-inner">
+      <div class="about-visual reveal">
+        <div class="about-portrait-wrap">
+          <div class="about-portrait-frame">
+            <img src="assets/about-portrait.jpg" alt="Shiwam Kumar — Data Analyst" class="about-portrait-img" />
+            <div class="about-portrait-overlay"></div>
+            <div class="about-portrait-dots"></div>
+          </div>
+          <div class="about-portrait-label">A HUMAN PERSPECTIVE ON DATA</div>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <h2 class="about-title">
+          Data is the<br/>starting point.<br/><em>Insights are the point.</em>
+        </h2>
+        <p class="about-body">
+          I connect engineering, analysis, and business strategy.
+        </p>
+        <p class="about-body">
+          Since Jan 2026, I've been working as a Data Analyst—turning complex datasets 
+          into clear narratives, building ML models, and creating dashboards 
+          that actually <strong>drive decisions</strong>.
+        </p>
+        <a href="#work" class="link-arrow" id="read-story-btn">Read my story ↗</a>
+        <div class="about-tags">
+          <span>FREELANCE ANALYST</span>
+          <span>INDUSTRY INSIGHTS</span>
+          <span>BUILDER'S AMBITION</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs-section reveal">
+      <p class="tabs-label">STRUCTURE</p>
+      <div class="tabs">
+        <button class="tab active" id="tab-analyze" data-tab="analyze">Analyze</button>
+        <button class="tab" id="tab-build" data-tab="build">Build</button>
+        <button class="tab" id="tab-connect" data-tab="connect">Connect</button>
+      </div>
+      <div class="tab-content" id="tab-content">
+        <h3 class="tab-title">Turn raw data into clarity.</h3>
+        <p class="tab-body">Statistical analysis, data cleaning, and visualization that transforms messy datasets into actionable business intelligence.</p>
+        <a href="#work" class="link-arrow" id="explore-tab-btn">Explore the projects ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills-section" id="skills">
+    <div class="section-header reveal">
+      <div class="section-num">
+        <span>02</span> / <span>SKILLS &amp; TOOLS</span>
+      </div>
+      <span class="section-tagline">BUILT. FORGED. PUT INTO THE WORLD.</span>
+    </div>
+
+    <div class="skills-headline reveal">
+      <h2>Skills are a base.<br/><em>Application is everything.</em></h2>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="skill-category">
+        <h4>Languages</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">HTML/CSS</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Libraries</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Matplotlib</span>
+          <span class="skill-tag">Seaborn</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Analytics &amp; BI</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Excel</span>
+          <span class="skill-tag">Google Analytics</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Machine Learning</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Supervised Learning</span>
+          <span class="skill-tag">Unsupervised Learning</span>
+          <span class="skill-tag">Regression</span>
+          <span class="skill-tag">Classification</span>
+          <span class="skill-tag">Clustering</span>
+          <span class="skill-tag">Feature Engineering</span>
+          <span class="skill-tag">Model Evaluation</span>
+          <span class="skill-tag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Databases &amp; Cloud</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Google Colab</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Deep Learning</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Artificial Neural Networks (ANN)</span>
+          <span class="skill-tag">Convolutional Neural Networks (CNN)</span>
+          <span class="skill-tag">Recurrent Neural Networks (RNN)</span>
+          <span class="skill-tag">Backpropagation</span>
+          <span class="skill-tag">Activation Functions</span>
+          <span class="skill-tag">Loss Functions</span>
+          <span class="skill-tag">Optimization Algorithms (SGD, Adam)</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>GenAI</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Large Language Models (LLMs)</span>
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
+          <span class="skill-tag">AI Agents</span>
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">Vector Databases</span>
+          <span class="skill-tag">Embeddings</span>
+          <span class="skill-tag">LLM API Integration</span>
+          <span class="skill-tag">Text Generation</span>
+          <span class="skill-tag">Fine-Tuning</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Natural Language Processing (NLP)</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Text Preprocessing</span>
+          <span class="skill-tag">Tokenization</span>
+          <span class="skill-tag">Stemming &amp; Lemmatization</span>
+          <span class="skill-tag">Stop Word Removal</span>
+          <span class="skill-tag">Bag of Words (BoW)</span>
+          <span class="skill-tag">TF-IDF</span>
+          <span class="skill-tag">Word Embeddings</span>
+          <span class="skill-tag">Sentiment Analysis</span>
+          <span class="skill-tag">Named Entity Recognition (NER)</span>
+          <span class="skill-tag">Text Classification</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK / PROJECTS SECTION ===== -->
+  <section class="work-section" id="work">
+    <div class="section-header reveal">
+      <div class="section-num">
+        <span>03</span> / <span>SELECTED WORK</span>
+      </div>
+      <span class="section-tagline">BUILT. FORGED. PUT INTO THE WORLD.</span>
+    </div>
+
+    <div class="work-headline reveal">
+      <h2>Ideas are a start.<br/><em>This is the work.</em></h2>
+      <p class="work-desc">From raw datasets to production models—a few things I've helped bring to life.</p>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="project-card reveal" id="project-1">
+      <div class="project-preview">
+        <div class="project-preview-inner">
+          <div class="project-mockup p1-mockup">
+            <div class="mockup-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="url-bar">dashboard.shiwam.dev</span>
+            </div>
+            <div class="mockup-content p1-content">
+              <div class="mockup-chart-bar" style="--h:60%"></div>
+              <div class="mockup-chart-bar" style="--h:85%"></div>
+              <div class="mockup-chart-bar" style="--h:45%"></div>
+              <div class="mockup-chart-bar" style="--h:70%"></div>
+              <div class="mockup-chart-bar" style="--h:90%"></div>
+              <div class="mockup-chart-bar" style="--h:55%"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="project-link-btn" id="proj1-link">↗</a>
+        <span class="project-tag-label">ANALYTICS &amp; BI</span>
+      </div>
+      <div class="project-info">
+        <span class="project-num">01</span>
+        <span class="project-category">ANALYTICS &amp; BI</span>
+        <h3 class="project-title">Product Funnel, Conversion &amp; Retention Analytics</h3>
+        <p class="project-body">End-to-end funnel analysis tracking user drop-off, conversion rates, and retention cohorts — delivered as an interactive Power BI dashboard backed by PostgreSQL and Python.</p>
+        <div class="project-skills">
+          <span class="proj-skill">Python</span>
+          <span class="proj-skill">Pandas</span>
+          <span class="proj-skill">PostgreSQL</span>
+          <span class="proj-skill">Power BI</span>
+          <span class="proj-skill">Excel</span>
+        </div>
+        <a href="#" class="link-arrow" id="proj1-story">Explore the story ↗</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card project-card-reverse reveal" id="project-2">
+      <div class="project-preview">
+        <div class="project-preview-inner">
+          <div class="project-mockup p2-mockup">
+            <div class="mockup-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="url-bar">model.shiwam.dev</span>
+            </div>
+            <div class="mockup-content p2-content">
+              <div class="ml-node n1"></div>
+              <div class="ml-node n2"></div>
+              <div class="ml-node n3"></div>
+              <div class="ml-lines"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="project-link-btn" id="proj2-link">↗</a>
+        <span class="project-tag-label">MACHINE LEARNING</span>
+      </div>
+      <div class="project-info">
+        <span class="project-num">02</span>
+        <span class="project-category">MACHINE LEARNING</span>
+        <h3 class="project-title">ML Prediction Model</h3>
+        <p class="project-body">A machine learning pipeline built with Python and Scikit-learn. Handles data preprocessing, feature engineering, model training, and evaluation.</p>
+        <a href="#" class="link-arrow" id="proj2-story">Explore the story ↗</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card reveal" id="project-3">
+      <div class="project-preview">
+        <div class="project-preview-inner">
+          <div class="project-mockup p3-mockup">
+            <div class="mockup-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="url-bar">analysis.shiwam.dev</span>
+            </div>
+            <div class="mockup-content p3-content">
+              <div class="line-chart">
+                <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                  <polyline points="0,70 30,55 60,60 90,30 120,40 150,20 180,25 200,10" 
+                            fill="none" stroke="#b8860b" stroke-width="2"/>
+                  <polyline points="0,70 30,55 60,60 90,30 120,40 150,20 180,25 200,10" 
+                            fill="url(#grad)" opacity="0.3"/>
+                  <defs>
+                    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#b8860b"/>
+                      <stop offset="100%" stop-color="transparent"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="project-link-btn" id="proj3-link">↗</a>
+        <span class="project-tag-label">MACHINE LEARNING</span>
+      </div>
+      <div class="project-info">
+        <span class="project-num">03</span>
+        <span class="project-category">MACHINE LEARNING</span>
+        <h3 class="project-title">Customer Churn Prediction &amp; Retention Analysis</h3>
+        <p class="project-body">Built a supervised ML pipeline to predict customer churn, combining EDA, feature engineering, and classification models — delivering actionable retention strategies from data.</p>
+        <div class="project-skills">
+          <span class="proj-skill">Python</span>
+          <span class="proj-skill">Machine Learning</span>
+        </div>
+        <a href="#" class="link-arrow" id="proj3-story">Explore the story ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="education-section" id="education">
+    <div class="section-header reveal">
+      <div class="section-num">
+        <span>04</span> / <span>EDUCATION &amp; CERTIFICATIONS</span>
+      </div>
+      <span class="section-tagline">KNOWLEDGE. CREDENTIALS. CRAFT.</span>
+    </div>
+
+    <div class="edu-headline reveal">
+      <h2>Trained by the best.<br/><em>Certified to prove it.</em></h2>
+      <p class="edu-desc">My data analytics expertise comes from professional instruction and real-world industry simulations — not just self-study.</p>
+    </div>
+
+    <div class="edu-layout reveal">
+
+      <!-- LEFT: Degrees -->
+      <div class="edu-col">
+        <div class="edu-col-label">FORMAL EDUCATION</div>
+
+        <div class="edu-card" id="edu-bca">
+          <div class="edu-card-top">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-meta">
+              <span class="edu-period">Jul 2024 — Jul 2027</span>
+              <span class="edu-location">📍 Roorkee, Uttarakhand</span>
+            </div>
+          </div>
+          <h3 class="edu-degree">Bachelor of Computer Applications <span class="edu-short">(BCA)</span></h3>
+          <p class="edu-institute">Roorkee Institute of Technology</p>
+          <p class="edu-detail">Pursuing a full-time degree with a focus on computer science fundamentals, data structures, algorithms, and software engineering — building the technical backbone that powers my analytics work.</p>
+          <div class="edu-badge">PURSUING · 2024–2027</div>
+        </div>
+
+        <div class="edu-card" id="edu-class12">
+          <div class="edu-card-top">
+            <div class="edu-icon">📚</div>
+            <div class="edu-meta">
+              <span class="edu-period">Mar 2024</span>
+              <span class="edu-location">📍 GopalGanj, Bihar</span>
+            </div>
+          </div>
+          <h3 class="edu-degree">Senior Secondary Examination <span class="edu-short">(Class XII)</span></h3>
+          <p class="edu-institute">P.D.S.D. Inter College</p>
+          <p class="edu-detail">Completed senior secondary education with a strong foundation in science and mathematics — the stepping stone to my computer science journey.</p>
+          <div class="edu-badge">COMPLETED · 2024</div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Certifications -->
+      <div class="edu-col edu-col-certs">
+        <div class="edu-col-label">PROFESSIONAL CERTIFICATIONS</div>
+
+        <div class="cert-card" id="cert-codewithharry">
+          <div class="cert-stripe"></div>
+          <div class="cert-body">
+            <div class="cert-header">
+              <div class="cert-badge-icon">⚡</div>
+              <div class="cert-issuer-info">
+                <span class="cert-issuer">CodeWithHarry</span>
+                <span class="cert-period">Jan 2026 — Jun 2026</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Ultimate Job-Ready AI-Powered Data Analytics Course</h3>
+            <p class="cert-desc">An intensive, professional-grade course covering Python for data analysis, SQL, Power BI, machine learning, and AI-powered analytics workflows — taught by one of India's most trusted tech educators.</p>
+            <div class="cert-tags">
+              <span>Python</span><span>SQL</span><span>Power BI</span><span>Machine Learning</span><span>AI Analytics</span>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-verified">✓ Professionally Instructed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" id="cert-deloitte">
+          <div class="cert-stripe cert-stripe-gold"></div>
+          <div class="cert-body">
+            <div class="cert-header">
+              <div class="cert-badge-icon">🏢</div>
+              <div class="cert-issuer-info">
+                <span class="cert-issuer">Deloitte &amp; Forage</span>
+                <span class="cert-period">Jan 2026</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Deloitte Data Analytics Job Simulation</h3>
+            <p class="cert-desc">Completed Deloitte's official data analytics job simulation via Forage — gaining hands-on experience with real business scenarios, data-driven decision making, and industry-level analytics practices.</p>
+            <div class="cert-tags">
+              <span>Data Analytics</span><span>Business Intelligence</span><span>Industry Simulation</span>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-verified cert-verified-gold">✓ Industry Certified · Deloitte</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTENT / SPEAKING SECTION ===== -->
+  <section class="content-section" id="content">
+    <div class="section-header reveal">
+      <div class="section-num">
+        <span>05</span> / <span>CONTENT &amp; LEARNING</span>
+      </div>
+    </div>
+
+    <div class="content-headline reveal">
+      <h2>More ways <em>I build.</em></h2>
+    </div>
+
+    <div class="content-grid reveal">
+      <div class="content-card" id="content-card-1">
+        <div class="content-card-icon">📊</div>
+        <h3>Data Notebooks</h3>
+        <p>Jupyter notebooks and Python scripts shared publicly for the community. Clean code, clear explanations.</p>
+        <a href="#" class="link-arrow" id="notebooks-link">Explore →</a>
+      </div>
+      <div class="content-card" id="content-card-2">
+        <div class="content-card-icon">📝</div>
+        <h3>Case Studies</h3>
+        <p>Deep dives into real-world data problems and the analytical approaches used to solve them step-by-step.</p>
+        <a href="#" class="link-arrow" id="casestudies-link">Read more →</a>
+      </div>
+      <div class="content-card" id="content-card-3">
+        <div class="content-card-icon">🎯</div>
+        <h3>Freelance Work</h3>
+        <p>Open to collaborating on analytics projects, dashboard design, or ML model development. Let's create impact.</p>
+        <a href="#contact" class="link-arrow" id="freelance-link">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner reveal">
+      <div class="contact-label">06 / LET'S CONNECT</div>
+      <h2 class="contact-title">
+        Got a project?<br/><em>Let's talk data.</em>
+      </h2>
+      <p class="contact-body">
+        Whether it's a freelance project, collaboration, or just wanting to discuss data — I'm always open to a good conversation.
+      </p>
+      <a href="mailto:shiwam808460@gmail.com" class="contact-cta" id="contact-email-btn">shiwam808460@gmail.com ↗</a>
+
+      <div class="contact-socials">
+        <a href="https://www.linkedin.com/in/shiwamkumar26" class="social-link" id="linkedin-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Shiwam-26" class="social-link" id="github-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:shiwam808460@gmail.com" class="social-link" id="email-link">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Shiwam Kumar</span>
+      <span class="footer-copy">© 2024 — All Rights Reserved</span>
+      <span class="footer-role">Data Analyst</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
