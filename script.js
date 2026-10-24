@@ -530,7 +530,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =============================================
-  // RELIABLE RESUME DOWNLOAD HANDLER (BLOB STREAM)
+  // RELIABLE RESUME DOWNLOAD HANDLER (BLOB STREAM + GITHUB FALLBACK)
   // =============================================
   const setupDownloadHandler = (btnId) => {
     const btn = document.getElementById(btnId);
@@ -540,12 +540,17 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       btn.style.opacity = '0.7';
 
+      const githubPdfFallback = 'https://raw.githubusercontent.com/Shiwam-26/Shiwam_Portfolio/main/assets/resume.pdf';
+
       fetch('assets/resume.pdf')
         .then(res => {
-          if (!res.ok) throw new Error('File not accessible');
+          if (!res.ok) throw new Error('File not accessible on host');
           return res.blob();
         })
         .then(blob => {
+          if (blob.type && !blob.type.includes('pdf') && blob.type.includes('html')) {
+            throw new Error('Host returned HTML error page instead of PDF');
+          }
           const blobUrl = window.URL.createObjectURL(blob);
           const link = document.createElement('a');
           link.href = blobUrl;
@@ -559,7 +564,8 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 300);
         })
         .catch(() => {
-          window.location.href = 'assets/resume.pdf';
+          // Fallback directly to verified GitHub raw PDF file
+          window.open(githubPdfFallback, '_blank');
           btn.style.opacity = '1';
         });
     });
