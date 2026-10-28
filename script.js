@@ -540,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =============================================
   // RESUME VIEW HANDLER (VIEW-ONLY via Google Docs Viewer)
   // =============================================
-  const RESUME_VIEW_URL = 'https://docs.google.com/viewer?url=https://shiwam-26.github.io/Shiwam_Portfolio/assets/resume.pdf';
+  const RESUME_VIEW_URL = 'https://shiwam-26.github.io/Shiwam_Portfolio/assets/resume.pdf';
 
   const setupViewHandler = (btnId) => {
     const btn = document.getElementById(btnId);
