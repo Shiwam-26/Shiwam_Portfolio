@@ -538,6 +538,97 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =============================================
+  // LET'S TALK POPUP MODAL HANDLERS
+  // =============================================
+  const talkModal = document.getElementById('talk-modal');
+  const talkModalCloseBtn = document.getElementById('talk-modal-close-btn');
+  const talkModalBackdrop = document.getElementById('talk-modal-backdrop');
+  const navCtaBtn = document.getElementById('nav-cta-btn');
+  const mobTalkBtn = document.getElementById('mob-talk-btn');
+  const talkCopyBtn = document.getElementById('talk-copy-email-btn');
+  const talkCopyTitle = document.getElementById('talk-copy-title');
+  const talkCopyIndicator = document.getElementById('talk-copy-indicator');
+
+  const openTalkModal = () => {
+    if (!talkModal) return;
+    talkModal.classList.add('active');
+    talkModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    // Close mobile menu if open
+    if (typeof toggleMobileMenu === 'function' && menuOpen) {
+      toggleMobileMenu(false);
+    }
+
+    setTimeout(() => {
+      if (talkModalCloseBtn) talkModalCloseBtn.focus();
+    }, 60);
+  };
+
+  const closeTalkModal = () => {
+    if (!talkModal) return;
+    talkModal.classList.remove('active');
+    talkModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (navCtaBtn) navCtaBtn.focus();
+  };
+
+  if (navCtaBtn) {
+    navCtaBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openTalkModal();
+    });
+  }
+
+  if (mobTalkBtn) {
+    mobTalkBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openTalkModal();
+    });
+  }
+
+  if (talkModalCloseBtn) talkModalCloseBtn.addEventListener('click', closeTalkModal);
+  if (talkModalBackdrop) talkModalBackdrop.addEventListener('click', closeTalkModal);
+
+  // Copy email inside talk modal
+  if (talkCopyBtn) {
+    talkCopyBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const email = 'shiwam808460@gmail.com';
+      const handleSuccess = () => {
+        if (talkCopyTitle) talkCopyTitle.textContent = 'Copied to Clipboard! ✓';
+        if (talkCopyIndicator) talkCopyIndicator.textContent = '✓';
+        showToast('Email copied to clipboard: ' + email);
+        setTimeout(() => {
+          if (talkCopyTitle) talkCopyTitle.textContent = 'Copy Email Address';
+          if (talkCopyIndicator) talkCopyIndicator.textContent = '📋';
+        }, 2400);
+      };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(email)
+          .then(handleSuccess)
+          .catch(() => {
+            fallbackCopy(email);
+            handleSuccess();
+          });
+      } else {
+        fallbackCopy(email);
+        handleSuccess();
+      }
+    });
+  }
+
+  // Keyboard Escape listener for talk modal
+  document.addEventListener('keydown', (e) => {
+    if (talkModal && talkModal.classList.contains('active')) {
+      if (e.key === 'Escape') {
+        closeTalkModal();
+      }
+    }
+  });
+
+  // =============================================
   // RESUME VIEW HANDLER (VIEW-ONLY via Google Docs Viewer)
   // =============================================
   const RESUME_VIEW_URL = 'https://shiwam-26.github.io/Shiwam_Portfolio/assets/resume.pdf';

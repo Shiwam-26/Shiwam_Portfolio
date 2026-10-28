@@ -40,7 +40,7 @@
       <a href="#work" class="nav-link">Projects</a>
       <a href="#education" class="nav-link">Education</a>
       <a href="#contact" class="nav-link">Contact</a>
-      <a href="mailto:shiwam808460@gmail.com" class="nav-cta" id="nav-cta-btn">Let's talk ↗</a>
+      <button class="nav-cta" id="nav-cta-btn" type="button" aria-haspopup="dialog" aria-controls="talk-modal">Let's talk ↗</button>
     </div>
     <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span><span></span>
@@ -55,6 +55,7 @@
     <a href="#work" class="mobile-link" id="mob-projects">Projects</a>
     <a href="#education" class="mobile-link" id="mob-education">Education</a>
     <a href="#contact" class="mobile-link" id="mob-contact">Contact</a>
+    <button class="mobile-link mobile-talk-btn" id="mob-talk-btn" type="button" style="background: none; border: none; cursor: pointer; color: var(--gold-bright);">Let's talk ↗</button>
   </div>
 
   <main id="main-content">
@@ -779,6 +780,92 @@
       <button class="modal-close" id="modal-close-btn" aria-label="Close project details dialog">✕</button>
       <div class="modal-content" id="modal-dynamic-content">
         <!-- Dynamically injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LET'S TALK POPUP MODAL ===== -->
+  <div class="talk-modal" id="talk-modal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div class="modal-backdrop" id="talk-modal-backdrop"></div>
+    <div class="talk-modal-container">
+      <button class="modal-close" id="talk-modal-close-btn" aria-label="Close Let's Talk dialog">✕</button>
+
+      <div class="talk-modal-header">
+        <div class="talk-modal-badge">
+          <span class="talk-pulse-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
+        <h3 class="talk-modal-title" id="talk-modal-title">
+          Let’s start a conversation.<br/><em>How would you like to connect?</em>
+        </h3>
+        <p class="talk-modal-subtitle">
+          I'm actively interviewing for Entry-Level Data Analyst roles and open to analytics projects. Pick your preferred channel below:
+        </p>
+      </div>
+
+      <div class="talk-grid">
+        <!-- Option 1: Direct Gmail Compose -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shiwam808460@gmail.com&su=Opportunity%20%7C%20Portfolio%20Inquiry&body=Hi%20Shiwam%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20wanted%20to%20connect.%0A%0A" target="_blank" rel="noopener" class="talk-card talk-card-primary">
+          <div class="talk-card-icon">✉️</div>
+          <div class="talk-card-body">
+            <div class="talk-card-tag">Recommended</div>
+            <div class="talk-card-title">Send Email via Gmail ↗</div>
+            <div class="talk-card-desc">Opens Gmail with recipient &amp; subject pre-filled</div>
+            <div class="talk-card-val">shiwam808460@gmail.com</div>
+          </div>
+          <span class="talk-card-arrow">↗</span>
+        </a>
+
+        <!-- Option 2: Copy Email -->
+        <button type="button" class="talk-card" id="talk-copy-email-btn">
+          <div class="talk-card-icon">📋</div>
+          <div class="talk-card-body">
+            <div class="talk-card-tag">Quick Action</div>
+            <div class="talk-card-title" id="talk-copy-title">Copy Email Address</div>
+            <div class="talk-card-desc">Copies my address directly to your clipboard</div>
+            <div class="talk-card-val">shiwam808460@gmail.com</div>
+          </div>
+          <span class="talk-card-arrow" id="talk-copy-indicator">📋</span>
+        </button>
+
+        <!-- Option 3: LinkedIn -->
+        <a href="https://www.linkedin.com/in/shiwamkumar26" target="_blank" rel="noopener" class="talk-card">
+          <div class="talk-card-icon">💼</div>
+          <div class="talk-card-body">
+            <div class="talk-card-tag">Professional</div>
+            <div class="talk-card-title">LinkedIn Message ↗</div>
+            <div class="talk-card-desc">Connect and message directly on LinkedIn</div>
+            <div class="talk-card-val">linkedin.com/in/shiwamkumar26</div>
+          </div>
+          <span class="talk-card-arrow">↗</span>
+        </a>
+
+        <!-- Option 4: Direct Call & WhatsApp -->
+        <div class="talk-card talk-card-phone">
+          <div class="talk-card-icon">📞</div>
+          <div class="talk-card-body">
+            <div class="talk-card-tag">Direct Contact</div>
+            <div class="talk-card-title">Call or WhatsApp</div>
+            <div class="talk-card-desc">+91-8077624510 · Roorkee, Uttarakhand</div>
+            <div class="talk-phone-actions">
+              <a href="tel:+918077624510" class="talk-mini-btn">
+                <span>📞 Call</span>
+              </a>
+              <a href="https://wa.me/918077624510?text=Hi%20Shiwam%2C%20I%20saw%20your%20data%20analytics%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener" class="talk-mini-btn talk-mini-btn-wa">
+                <span>💬 WhatsApp ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="talk-modal-footer">
+        <div class="talk-location-tag">
+          📍 Roorkee, Uttarakhand, India · Open to Remote &amp; On-Site
+        </div>
+        <a href="https://shiwam-26.github.io/Shiwam_Portfolio/assets/resume.pdf" target="_blank" rel="noopener" class="talk-resume-link">
+          Prefer to check my resume first? View Resume ↗
+        </a>
       </div>
     </div>
   </div>
