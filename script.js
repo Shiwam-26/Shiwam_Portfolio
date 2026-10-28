@@ -538,49 +538,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =============================================
-  // RELIABLE RESUME DOWNLOAD HANDLER (BLOB STREAM + GITHUB FALLBACK)
+  // RESUME VIEW HANDLER (VIEW-ONLY via Google Docs Viewer)
   // =============================================
-  const setupDownloadHandler = (btnId) => {
+  const RESUME_VIEW_URL = 'https://docs.google.com/viewer?url=https://shiwam-26.github.io/Shiwam_Portfolio/assets/resume.pdf';
+
+  const setupViewHandler = (btnId) => {
     const btn = document.getElementById(btnId);
     if (!btn) return;
-
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      btn.style.opacity = '0.7';
-
-      const githubPdfFallback = 'https://raw.githubusercontent.com/Shiwam-26/Shiwam_Portfolio/main/assets/resume.pdf';
-
-      fetch('assets/resume.pdf')
-        .then(res => {
-          if (!res.ok) throw new Error('File not accessible on host');
-          return res.blob();
-        })
-        .then(blob => {
-          if (blob.type && !blob.type.includes('pdf') && blob.type.includes('html')) {
-            throw new Error('Host returned HTML error page instead of PDF');
-          }
-          const blobUrl = window.URL.createObjectURL(blob);
-          const link = document.createElement('a');
-          link.href = blobUrl;
-          link.download = 'Shiwam_Kumar_Data_Analyst_Resume.pdf';
-          document.body.appendChild(link);
-          link.click();
-          setTimeout(() => {
-            document.body.removeChild(link);
-            window.URL.revokeObjectURL(blobUrl);
-            btn.style.opacity = '1';
-          }, 300);
-        })
-        .catch(() => {
-          // Fallback directly to verified GitHub raw PDF file
-          window.open(githubPdfFallback, '_blank');
-          btn.style.opacity = '1';
-        });
+      window.open(RESUME_VIEW_URL, '_blank', 'noopener,noreferrer');
     });
   };
 
-  setupDownloadHandler('download-resume-btn');
-  setupDownloadHandler('footer-resume-link');
+  setupViewHandler('download-resume-btn');
+  setupViewHandler('footer-resume-link');
 
   // =============================================
   // HOVER EFFECT — Project Cards (Desktop only)
